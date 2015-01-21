@@ -3,12 +3,11 @@ package edu.eci.cosw.hbintro.modelo;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.LinkedHashSet;
-
-/**
- * CMP 3.0 class for productos.
- *
- * @author <a href="http://boss.bekk.no/boss/middlegen/">Middlegen</a>.
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 public class Producto implements Serializable {
 
@@ -40,7 +39,6 @@ public class Producto implements Serializable {
 	 *
 	 * @return The primary key.
 	 */
-
 	public int getIdproducto() {
 		return idproducto;
 	}
@@ -59,7 +57,6 @@ public class Producto implements Serializable {
 	 *
 	 * @return The precio.
 	 */
-	@javax.persistence.Column(name = "precio")
 	public int getPrecio() {
 		return precio;
 	}
